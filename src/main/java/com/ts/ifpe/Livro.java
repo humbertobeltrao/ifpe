@@ -3,12 +3,21 @@ package com.ts.ifpe;
 public class Livro {
 	private String titulo;
 	private String autor;
+	private String isbn;
 	
 		
-	public Livro(String titulo, String autor) {
+	public Livro(String titulo, String autor, String isbn) {
 		
 		this.titulo = titulo;
 		this.autor = autor;
+		this.isbn = isbn;
+		
+	}
+	public String getIsbn() {
+		return isbn;
+	}
+	public void setIsbn(String isbn) {
+		this.isbn = isbn;
 	}
 	public String getTitulo() {
 		return titulo;

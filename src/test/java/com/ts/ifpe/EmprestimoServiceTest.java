@@ -10,7 +10,7 @@ public class EmprestimoServiceTest {
 	@Test
 	public void empServiceTest() {
 		Usuario usuario = new Usuario("Humberto", "1408701");
-		Livro livro = new Livro("Dom Quixote", "Miguel de Cervantes");
+		Livro livro = new Livro("Dom Quixote", "Miguel de Cervantes", "312-22");
 		EmprestimoService emp = new EmprestimoService();
 		
 		Emprestimo e = emp.pegarLivro(usuario, livro);
