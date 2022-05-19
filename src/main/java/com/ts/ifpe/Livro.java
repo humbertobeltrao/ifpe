@@ -11,14 +11,10 @@ public class Livro {
 		this.titulo = titulo;
 		this.autor = autor;
 		this.isbn = isbn;
+
 		
 	}
-	public String getIsbn() {
-		return isbn;
-	}
-	public void setIsbn(String isbn) {
-		this.isbn = isbn;
-	}
+
 	public String getTitulo() {
 		return titulo;
 	}
@@ -30,6 +26,12 @@ public class Livro {
 	}
 	public void setAutor(String autor) {
 		this.autor = autor;
+	}
+	public String getIsbn() {
+		return isbn;
+	}
+	public void setIsbn(String isbn) {
+		this.isbn = isbn;
 	}
 	
 	
