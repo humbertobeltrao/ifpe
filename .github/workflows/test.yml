@@ -24,7 +24,7 @@ jobs:
         cache: maven
         
     - name: Build with Maven
-      run: mvn clean build
+      run: mvn build
       
     - name: Initialize CodeQL
       id: init_codeql
