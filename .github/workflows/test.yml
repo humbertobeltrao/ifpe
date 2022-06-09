@@ -22,5 +22,17 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
         cache: maven
+        
     - name: Build with Maven
       run: mvn clean test
+      
+    - name: Initialize CodeQL
+      id: init_codeql
+      uses: github/codeql-action/init@v1
+      with:
+        languages: java
+        queries: security-and-quality
+        
+    - name: Perform CodeQL Analysis
+      id: analyze_codeql
+      uses: github/coeql-action/analyze@v1
