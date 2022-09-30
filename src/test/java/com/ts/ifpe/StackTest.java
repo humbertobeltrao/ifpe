@@ -26,7 +26,7 @@ public class StackTest {
 	public void testStackPush() {
 		
 		stack.push(3);
-		assertFalse(stack.size() == 0); 
+		assertTrue(stack.size() == 0); 
 	}
 	
 	@Test
