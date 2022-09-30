@@ -24,13 +24,7 @@ public class PilhaTest {
 		assertTrue(pilha.size() == 0);
 	}
 	
-	@Test
-	public void addTest() {
-	
-		pilha.adiciona(3);
-		assertTrue(pilha.size() == 0);
-	}
-	
+		
 	@Test
 	public void isEmptyTest() {
 		assertTrue(pilha.isEmpty());
