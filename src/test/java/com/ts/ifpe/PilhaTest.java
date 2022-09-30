@@ -8,40 +8,32 @@ import java.util.EmptyStackException;
 import org.junit.Before;
 import org.junit.Test;
 
+//classe com código de teste
 public class PilhaTest {
 	
-	Pilha<Integer> p;
+	Pilha<Integer> pilha;
 	
 	@Before
 	public void init() {
-		p = new Pilha<Integer>();
+		pilha = new Pilha<Integer>();
 	}
 	
 	@Test
-	public void testEmpty() {
-		
-		assertTrue(p.isEmpty());
+	public void sizeTest() {
+	
+		assertTrue(pilha.size() == 0);
 	}
 	
 	@Test
-	public void testPush() {
-		
-		p.push(3);
-		assertFalse(p.isEmpty());
+	public void addTest() {
+	
+		pilha.adiciona(3);
+		assertTrue(pilha.size() == 0);
 	}
 	
 	@Test
-	public void testPop() {
-		
-		p.push(1);
-		p.push(2);
-		p.push(3);
-		p.pop();
-		assertTrue(p.size() == 2);
-		
+	public void isEmptyTest() {
+		assertTrue(pilha.isEmpty());
 	}
-	
-	
-	
 	
 }

@@ -3,38 +3,30 @@ package com.ts.ifpe;
 import java.util.ArrayList;
 import java.util.EmptyStackException;
 
+//classe com código de sistema
 public class Pilha<T> {
 	
-	private ArrayList<T> pilha = new ArrayList<T>();
-	private int size = 0;
+	private ArrayList<T> pilha;
+	private int size;
 	
-	public void push(T elem) {
-		pilha.add(elem);
-		size++;
-	}
+	public Pilha() {
 	
-	public boolean isEmpty() {
-		return (size == 0);
+		this.pilha = new ArrayList<>();
+		this.size = 0;
 	}
 	
 	public int size() {
-		return size;
+		return this.size;
 	}
 	
-	public T pop() throws EmptyStackException {
-		if(pilha.isEmpty()) throw new EmptyStackException();
-		T rem = pilha.remove(size-1);
-		size--;
-		return rem;
+	public void adiciona(T elemento) {
+		pilha.add(elemento);
+		this.size++;
 	}
 	
-	
-	
-	
-	
-	
-	
-	
+	public boolean isEmpty() {
+		return (pilha.size() == 0);
+	}
 	
 	
 	
