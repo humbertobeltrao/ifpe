@@ -25,4 +25,4 @@ jobs:
         java-version: ${{ matrix.java-version }}
         distribution: 'temurin'
     - name: Build with Maven
-      run: mvn test
+      run: mvn package
